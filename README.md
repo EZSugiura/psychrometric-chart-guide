@@ -27,15 +27,15 @@ mkdocs build --strict
 
 ## GitHub Pages 公開・有効化手順
 
-1. **リポジトリの作成と `site_url` の差し替え**
-   - `mkdocs.yml` の `site_url` はプレースホルダになっています。公開先の GitHub ユーザー名／組織名・リポジトリ名に合わせて書き換えてください。
-     ```yaml
-     site_url: https://USERNAME.github.io/psychrometric-chart-guide/
-     ```
-     （`repo_url` / `repo_name` を設定する場合も同様に合わせてください）
+1. **GitHub 上で新規公開リポジトリを作成**
+   - `EZSugiura` アカウント配下に公開リポジトリ **`psychrometric-chart-guide`** を作成します（README や `.gitignore` の自動生成はオフにして空のまま作成してください）。
+   - `mkdocs.yml` の `site_url` は `https://ezsugiura.github.io/psychrometric-chart-guide/` に設定済みです。
 
 2. **GitHub へ push**
-   - `main` ブランチを GitHub リポジトリに push します。
+   ```bash
+   git remote add origin https://github.com/EZSugiura/psychrometric-chart-guide.git
+   git push -u origin main
+   ```
    - `.github/workflows/deploy.yml` により、`main` ブランチへの push をトリガーに `mkdocs build --strict` と GitHub Pages へのデプロイが自動実行されます。
 
 3. **GitHub Pages の有効化**
