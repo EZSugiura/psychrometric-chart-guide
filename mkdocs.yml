@@ -1,0 +1,91 @@
+site_name: 湿り空気線図 ガイド
+site_url: https://USERNAME.github.io/psychrometric-chart-guide/
+site_description: Flutter アプリ「湿り空気線図 (Psychrometric Chart)」の使い方解説・チュートリアルサイト
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: ja
+          default: true
+          name: 日本語
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: Psychrometric Chart Guide
+          site_description: User guide and tutorials for the Psychrometric Chart app
+          nav_translations:
+            ホーム: Home
+            はじめての方へ: Getting Started
+            空気線図の読み方: Reading the Chart
+            機能ガイド: Features
+            複数点プロット・入力方法: Plotting Points
+            保存と読込: Save & Load
+            ポイント比較・熱量換算: Compare & Heat Load
+            単位系と言語: Units & Language
+            低温チャート: Low-Temperature Chart
+            Pro（有料機能）: Pro Features
+            Pro プラン概要: Pro Overview
+            空調模擬（AHUプロセス設計）: AHU Process Design
+            空調シミュレーション（年間8760時間）: Annual HVAC Simulation
+            活用例: Practical Examples
+            よくある質問・お問い合わせ: FAQ & Contact
+
+nav:
+  - ホーム: index.md
+  - はじめての方へ: getting-started.md
+  - 空気線図の読み方: reading-the-chart.md
+  - 機能ガイド:
+      - 複数点プロット・入力方法: features/plotting.md
+      - 保存と読込: features/save-load.md
+      - ポイント比較・熱量換算: features/compare.md
+      - 単位系と言語: features/units.md
+      - 低温チャート: features/low-temperature.md
+  - Pro（有料機能）:
+      - Pro プラン概要: pro/overview.md
+      - 空調模擬（AHUプロセス設計）: pro/ahu-design.md
+      - 空調シミュレーション（年間8760時間）: pro/annual-simulation.md
+  - 活用例: examples.md
+  - よくある質問・お問い合わせ: faq.md
