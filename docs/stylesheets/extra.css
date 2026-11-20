@@ -1,0 +1,109 @@
+/* セクション見出し（ステップ1など）に背景色と左アクセント線を付けて区切りを明確化 */
+.md-typeset h2 {
+  background-color: color-mix(in srgb, var(--md-primary-fg-color) 11%, transparent);
+  border-left: 5px solid var(--md-primary-fg-color);
+  border-radius: 0 6px 6px 0;
+  padding: 0.45em 0.85em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.md-typeset h3 {
+  border-bottom: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 28%, transparent);
+  padding-bottom: 0.25em;
+  margin-top: 1.6em;
+}
+
+/* スクリーンショット画像の縮小表示とカード風フレーム */
+.md-typeset .screenshot-figure {
+  margin: 0.75em 0 1.4em 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.md-typeset img.screenshot-thumb {
+  display: block;
+  max-width: min(260px, 78vw);
+  max-height: 460px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 16%, transparent);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  cursor: zoom-in;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset img.screenshot-thumb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.md-typeset .screenshot-hint {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  user-select: none;
+}
+
+/* ライトボックス（タップ・クリックで拡大表示） */
+.guide-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.86);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+
+.guide-lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.guide-lightbox__img {
+  max-width: 94vw;
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  cursor: zoom-out;
+}
+
+.guide-lightbox__caption {
+  margin-top: 10px;
+  color: #f1f5f9;
+  font-size: 0.85rem;
+  text-align: center;
+  max-width: 90vw;
+}
+
+.guide-lightbox__close {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide-lightbox__close:hover {
+  background: rgba(255, 255, 255, 0.32);
+}

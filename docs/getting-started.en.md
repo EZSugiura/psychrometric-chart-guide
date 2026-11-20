@@ -16,8 +16,6 @@ In this tutorial, you will plot **25°C and 50% relative humidity**, read the ca
 
 ## Step 2: Enter Temperature & Humidity and Plot
 
-![Point entry panel](assets/images/en/02_point_entry.png)
-
 1. Make sure the first dropdown is set to **Temperature** and enter `25`.
 2. Make sure the second dropdown is set to **Relative Humidity** and enter `50`.
    - You can also choose Dew Point, Humidity Ratio, Enthalpy, or Wet Bulb Temperature (see [Plotting Points](features/plotting.md) for all combinations).
@@ -25,6 +23,8 @@ In this tutorial, you will plot **25°C and 50% relative humidity**, read the ca
 4. Enter an optional **name** (e.g., `Room`) and choose a **Color** (from 8 colors), then tap **OK**.
 5. **Point A** appears on the chart.
    - Tap **Add Next Point** to plot another point, or **Done** to finish.
+
+![Point entry panel](assets/images/en/02_point_entry.png)
 
 ## Step 3: Read the Calculated Values
 
@@ -49,12 +49,12 @@ See [Reading the Chart](reading-the-chart.md) to learn what each property means.
 
 ## Step 4: Save Your Data
 
-![Save dialog](assets/images/en/04_save_dialog.png)
-
 1. Open **Menu** → **Save**.
 2. Choose a save destination (**Slot 1** through **Slot 9**) under **Saved Data**.
 3. Enter a **file name** (e.g., `Summer Case`). If left blank, the current date and time is used automatically.
 4. Tap **Save**.
    - On the free Android plan, a confirmation dialog (*"Watch an ad to save?"*) appears. Tap **Watch Ad & Save** and watch the rewarded video ad to complete saving. (Pro users save immediately without ads.)
+
+![Save dialog](assets/images/en/04_save_dialog.png)
 
 You can reload saved slots anytime from **Menu** → **Load**.

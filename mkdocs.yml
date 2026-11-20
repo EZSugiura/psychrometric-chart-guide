@@ -39,6 +39,12 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/lightbox.js
+
 plugins:
   - search
   - i18n:

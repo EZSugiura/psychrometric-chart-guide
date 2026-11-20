@@ -8,8 +8,6 @@ Open it from **Menu** → **HVAC Simulation** (or tap the **Simulation** tab in 
 
 ## Step 1: Choose a Location & Fetch Weather Data
 
-![Weather data fetch](../assets/images/en/11_weather_fetch.png)
-
 On the **Location** screen, choose one of three methods:
 
 1. **Use Current Location** (GPS)  
@@ -21,6 +19,8 @@ On the **Location** screen, choose one of three methods:
 
 Next, choose the **Year** (from `2001` up to the current year) and tap **Fetch Weather Data**.  
 Hourly temperature and relative humidity data are downloaded from NASA POWER's public dataset. Once complete, tap **View Plot** to open the simulation workspace.
+
+![Weather data fetch](../assets/images/en/11_weather_fetch.png)
 
 !!! info "Cache & Saved Projects"
     - **Cached Locations**: Up to 20 location-year datasets are cached locally (LRU). Tap any cached entry to reopen it, or tap the trash icon to delete it.
@@ -39,6 +39,8 @@ Open **Filter** from **Menu** (or the floating buttons at the bottom right) to i
   - **Value Ranges**: Add min/max constraints on any psychrometric property.
 - The panel displays **`{count} / {total} hours`** matching your active filters in real time.
 
+![Annual simulation results](../assets/images/en/12_annual_simulation.png)
+
 ---
 
 ## Step 3: Define Setpoints
@@ -53,8 +55,6 @@ Open **Setpoints** and tap **Add** to create one or more indoor target condition
 ---
 
 ## Step 4: Enter AHU Specs & Run the Simulation
-
-![Annual simulation results](../assets/images/en/12_annual_simulation.png)
 
 Open **AHU Spec / Results** and enter your equipment specifications:
 
